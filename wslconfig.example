@@ -1,0 +1,11 @@
+# Copy this file to:  C:\Users\<your-username>\.wslconfig
+# Then in PowerShell:  wsl --shutdown
+# Reopen Ubuntu and run the bot from WSL again.
+#
+# Mirrored networking + loopback fixes WebRTC audio between WSL and Windows Chrome.
+
+[wsl2]
+networkingMode=mirrored
+
+[experimental]
+hostAddressLoopback=true
